@@ -1,5 +1,5 @@
 ### Hi there 👋
-
+[![@HairyBlue](https://github.com/HairyBlue/HairyBlue/blob/main/assets/Hello%20World.png)]()
 <!--
 **HairyBlue/HairyBlue** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
