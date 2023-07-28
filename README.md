@@ -5,7 +5,7 @@
 - 💻 I’m currently learning web technologies
 - 📫 How to reach me: ⬇️⬇️⬇️
 
-<a href="mailto: pecision.nickimarty@gmail.com"><img src="https://img.shields.io/badge/Gmail-pecision.nickimarty@gmail.com?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail"></a>
+<a href="mailto: pecision.nickimarty@gmail.com"><img src="https://img.shields.io/badge/Gmail-pecision.nickimarty@gmail.com?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <!--
 ### Hi there 👋
 **HairyBlue/HairyBlue** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
