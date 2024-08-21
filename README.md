@@ -1,11 +1,11 @@
 
 ![@HairyBlue](https://github.com/HairyBlue/HairyBlue/blob/main/assets/Hello%20World.png)
-### About Me (￣▽￣)ノ
-- (￣▽￣*)ゞ Hello World, I'm Nicki Marty Pecision (HairyBlue)
-- (o^ ^o) I’m currently learning web technologies
-- (つ✧ω✧)つ How to reach me: ⬇️⬇️⬇️
+## About Me (￣▽￣)ノ
+### (￣▽￣*)ゞ Hello World, I'm Nicki Marty Pecision (HairyBlue)
+### (o^ ^o) I’m currently learning web technologies
+### (つ✧ω✧)つ How to reach me: ⬇️⬇️⬇️
 
-### Socials (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)
+## Socials (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)
 <a href="mailto: pecision.nickimarty@gmail.com" _target="blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a> 
 <a href="https://www.facebook.com/unsecure.http" _target="blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/nickimartypecision" _target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
