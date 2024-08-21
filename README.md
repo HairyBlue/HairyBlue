@@ -1,5 +1,5 @@
 
-[![@HairyBlue](https://github.com/HairyBlue/HairyBlue/blob/main/assets/Hello%20World.png)
+![@HairyBlue](https://github.com/HairyBlue/HairyBlue/blob/main/assets/Hello%20World.png)
 ### About Me (￣▽￣)ノ
 - (￣▽￣*)ゞ Hello World, I'm Nicki Marty Pecision (HairyBlue)
 - (o^ ^o) I’m currently learning web technologies
