@@ -1,12 +1,17 @@
 
-[![@HairyBlue](https://github.com/HairyBlue/HairyBlue/blob/main/assets/Hello%20World.png)](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
+[![@HairyBlue](https://github.com/HairyBlue/HairyBlue/blob/main/assets/Hello%20World.png)]
 ### About Me (￣▽￣)ノ
 - (￣▽￣*)ゞ Hello World, I'm Nicki Marty Pecision (HairyBlue)
 - (o^ ^o) I’m currently learning web technologies
 - (つ✧ω✧)つ How to reach me: ⬇️⬇️⬇️
 
-### (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)
-<a href="mailto: pecision.nickimarty@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a> <a href="https://www.facebook.com/unsecure.http"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
+### Socials (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)
+<a href="mailto: pecision.nickimarty@gmail.com" _target="blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a> 
+<a href="https://www.facebook.com/unsecure.http" _target="blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
+<a href="https://www.linkedin.com/in/nickimartypecision" _target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+
+
+
 
 <!--
 ### Hi there 👋
