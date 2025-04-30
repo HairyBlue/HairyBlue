@@ -1,0 +1,30 @@
+{
+  "name": "hairyblue",
+  "version": "1.0.0",
+  "description": "This person is being proud to be Dummy Batch",
+  "main": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HairyBlue/HairyBlue.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Hairyblue",
+    "HairyBlue",
+    "Hairy",
+    "Blue",
+    "Hairy",
+    "blue",
+    "hairyblue",
+    "hairy",
+    "blue",
+    "Dummy",
+    "Batch",
+    "DummyBatch",
+    "dummybatch"
+  ],
+  "author": "Hairyblue (Nicki Marty Pecision)",
+  "license": "ISC"
+}
