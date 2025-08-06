@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+/* Starts here */
+*, *::after, *::before {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --balck: #1E201E;
+   --grayish: #D6D3D1;
+}
+
+:root {
+   --text-color-base: var(--balck);
+   --background-color-base: var(--grayish);
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --text-color-base: var(--balck);
+      --background-color-base: var(--grayish);
+   }
+ }
+ 
+ #debug-css {
+   position: fixed;
+   bottom: 1rem;
+   right: 1rem;
+   z-index: 1000;
+ }
+
+
+
+body {
+   /* font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+   font-weight: 400;
+   font-style: normal;
+   max-width: 1280px;
+   min-height: 100vh;
+   color: var(--text-color-base);
+   background-color: var(--background-color-base);
+   transition: color 0.5s, background-color 0.5s;
+   line-height: 1.6;
+   margin: 0 auto;
+   font-size: 16px;
+   padding: 0 1.2rem;
+}
+
+#debug-css::after {
+   content: 'XS'; /* fallback */
+   display: inline-block;
+   /* background-color: black; */
+   /* color: white; */
+   padding: 4px 2px;
+   border-radius: 25px;
+   font-size: 12px;
+   /* font-family: sans-serif; */
+ }
+ 
+
+ header {
+   border-bottom: 1px solid var(--balck);
+ }
+
+ header h1 {
+   font-size: 2.5em;
+   text-align: center;
+ }
+
+ header nav {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 0 .5rem;
+ }
+
+ a {
+   color: var(--text-color-base);
+   text-decoration: none;
+   position: relative;
+   display: inline-block;
+ }
+
+a::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   height: .5px;
+   background-color: currentColor;
+   transition: width 0.3s ease;
+ }
+
+ a:hover::after {
+   width: 100%;
+ }
+
+ /* MAIN */
+ main {
+   margin: 1.5rem 0;
+ }
+
+.info-intro {
+   line-height: 1;
+   text-align: center;
+}
+.info-intro h2 {
+   font-size: 4em;
+}
+.info-intro h3 {
+   font-size: 2.5em;
+}
+.info-intro h4 {
+   font-size: 1.25em;
+   line-height: 4;
+}
+
+.info-link {
+}
+.info-link nav {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   text-align: center;
+   font-size: 1.4em;
+   line-height: 2;
+}
+
+.info-about {
+   margin: 1rem 2rem;
+   text-align: justify;
+   font-size: 1.2em;
+}
+.info-about article p {
+   margin-bottom: 8px;
+}
+ /* 40rem (640px) */
+@media (width >= 40rem) { 
+   #debug-css::after {
+      content: 'SM';
+   }
+}
+
+/* 48rem (768px) */
+@media (width >= 48rem) { 
+   #debug-css::after {
+      content: 'MD';
+   }
+
+   header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   header h1 {
+      font-size: 2em;
+   }
+
+   header nav a {
+      margin-left: 2rem;
+   }
+
+   main {
+      margin-top: 6rem;
+   }
+
+   .info-intro {
+      line-height: 1;
+      text-align: start;
+   }
+   .info-intro h2 {
+      font-size: 6em;
+   }
+   .info-intro h3 {
+      font-size: 4em;
+   }
+   .info-intro h4 {
+      font-size: 2.2em;
+      line-height: 2;
+   }
+
+   .info-link nav {
+      display: flex;
+      justify-content: start;
+      gap: 2rem;
+      text-align: center;
+      line-height: 2;
+   }
+   .info-about {
+      margin: 1rem 0;
+      font-size: 1.4em;
+   }
+   
+   .info-about article p {
+      margin-bottom: 24px;
+   }
+}
+
+/* 64rem (1024px) */
+@media (width >= 64rem) {
+   #debug-css::after {
+      content: 'LG';
+   }
+ }
+
+/* 80rem (1280px) */
+@media (width >= 80rem) { 
+   #debug-css::after {
+      content: 'XL';
+   }
+}
+
+/* 96rem (1536px) */
+@media (width >= 96rem) { 
+   #debug-css::after {
+      content: '2XL';
+   }
+}
+
