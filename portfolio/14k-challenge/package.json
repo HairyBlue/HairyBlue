@@ -1,4 +1,8 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HairyBlue/HairyBlue.git"
+  },
   "type": "module",
   "scripts": {
     "build": "vite build",
