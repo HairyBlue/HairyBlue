@@ -235,6 +235,7 @@ a::after {
    .info-about {
       margin: 1rem 0;
       font-size: 1.4em;
+      font-display: swap;
    }
    
    .info-about article p {
