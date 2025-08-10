@@ -129,17 +129,19 @@ Client                                           Server
 - Then server must wait for ACK(s) before safely increasing the congestion window to send more — so the remaining segments (11–20) are sent after the ACK arrives.
 - That wait introduces an extra RTT (round-trip time) before the rest of the file arrives. On slow networks (e.g., 600 ms RTT), that extra RTT can add ~600 ms to perceived load time.
 
-
+---
+---
 ## 🛠 My Build Process
 I use Vite as my build tool and bundler to:
 - Minify JavaScript, CSS, and HTML
-- Optimize imports and tree-shake unused code
+- Optimize imports and tree-shake unused code\
 This ensures each page’s critical resources fit inside TCP’s IW10 limit for the fastest possible first load.
 
 ## 🚀 Why this matters for performance
 - On slow networks (e.g., 2G at 600+ ms RTT), avoiding extra RTTs is critical.
 - If your first response fits in IW10, the user sees the page as soon as the first burst arrives.
 - That’s why my target is ≤ 14 kB for every page request.
-
+---
+---
 # See Figma Design
 ![HOME](../../assets/portfolio/Home.png)
