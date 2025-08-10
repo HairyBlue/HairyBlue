@@ -3,13 +3,16 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 // import { viteSingleFile } from 'vite-plugin-singlefile'
 import simpleHtmlPlugin from 'vite-plugin-simple-html';
-
+import viteCompression from 'vite-plugin-compression';
 const __dirname = dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
 //   plugins: [viteSingleFile()],
-  plugins: [simpleHtmlPlugin({
-    minify: true,
-  })],
+  plugins: [
+    simpleHtmlPlugin({
+      minify: true,
+    }),
+    viteCompression()
+  ],
   root: resolve(__dirname, "src"),
   build: {
    emptyOutDir: true,

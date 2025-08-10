@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "vite": "^7.0.6",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-simple-html": "^1.0.1",
     "vite-plugin-singlefile": "^2.3.0"
   }
