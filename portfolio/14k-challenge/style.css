@@ -1,0 +1,453 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Starts here */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-black: #252525;
+  --text-10: #252525e6;
+  --text-20: #252525cc;
+  --text-30: #252525b3;
+
+  --surface-linen: #faf0e6;
+  --surface-10: #faf0e6e6;
+  --surface-20: #faf0e6cc;
+
+  --fill-black: #252525;
+  --fill-10: #252525e6;
+  --fill-20: #252525cc;
+  --fill-30: #252525b3;
+  --fill-40: #25252599;
+  --fill-50: #25252580;
+}
+
+:root[class~='black'] {
+  --text-black: #252525;
+  --text-10: #252525e6;
+  --text-20: #252525cc;
+  --text-30: #252525b3;
+
+  --surface-linen: #faf0e6;
+  --surface-10: #faf0e6e6;
+  --surface-20: #faf0e6cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-black: #252525;
+    --text-10: #252525e6;
+    --text-20: #252525cc;
+    --text-30: #252525b3;
+
+    --surface-linen: #faf0e6;
+    --surface-10: #faf0e6e6;
+    --surface-20: #faf0e6cc;
+  }
+}
+
+#debug-css {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+body {
+  /* font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+  max-width: 1280px;
+  min-height: 100vh;
+  color: var(--text-10);
+  background-color: var(--surface-linen);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+#debug-css::after {
+  content: 'XS'; /* fallback */
+  display: inline-block;
+  /* background-color: black; */
+  /* color: white; */
+  padding: 4px 2px;
+  border-radius: 25px;
+  font-size: 12px;
+  /* font-family: sans-serif; */
+}
+
+header {
+  border-bottom: 1px solid var(--text-10);
+}
+
+header h1 {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 900;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 0.5rem;
+}
+
+a {
+  color: var(--text-10);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+header nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+/* =================================== index.html ===================================*/
+
+main {
+  margin: 1.5rem 0;
+}
+
+.info-intro {
+  line-height: 1;
+  text-align: center;
+}
+
+.info-intro h2 {
+  font-size: 4em;
+}
+.info-intro h3 {
+  font-size: 2em;
+  line-height: 2;
+  text-wrap: nowrap;
+}
+
+.info-intro h4 {
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+.info-intro .github {
+  font-size: 0.6em;
+  letter-spacing: -0.3px;
+  border-bottom: 0.5px solid var(--fill-black);
+  padding: 0 0.1rem;
+  margin-left: 0.2rem;
+}
+
+.info-intro .github-content::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('/public/svg/github.svg') no-repeat center;
+  background-size: contain;
+  margin-bottom: -2px;
+}
+
+.info-link nav {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.5em, 5vw, 2em);
+  font-size: clamp(1.2em, 5vw, 2em);
+  line-height: 4;
+}
+
+.info-link nav span.location-content::before {
+  content: ' ';
+  display: inline-block;
+  width: clamp(0.5em, 5vw, 1em);
+  height: clamp(0.5em, 5vw, 1em);
+  background: url('/public/svg/location.svg') no-repeat center;
+  background-size: contain;
+  margin-bottom: -2.5px;
+}
+
+.info-link nav span.resume-content::before {
+  content: ' ';
+  display: inline-block;
+  width: clamp(0.5em, 5vw, 1em);
+  height: clamp(0.5em, 5vw, 1em);
+  background: url('/public/svg/resume.svg') no-repeat center;
+  background-size: contain;
+  margin-bottom: -2.5px;
+}
+
+.info-link nav span.linkedin-content::before {
+  content: ' ';
+  display: inline-block;
+  width: clamp(0.5em, 5vw, 1em);
+  height: clamp(0.5em, 5vw, 1em);
+  background: url('/public/svg/linkedin.svg') no-repeat center;
+  background-size: contain;
+  margin-bottom: -4px;
+}
+
+.info-about {
+  margin: 1rem 2rem;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.info-about article p {
+  margin-bottom: 8px;
+}
+
+/* =================================== index.html ===================================*/
+
+.footer-content-1 {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  align-items: center;
+}
+
+#quote {
+  font-style: italic;
+  font-size: clamp(0.8em, 2vw, 1.2em);
+}
+
+/* 40rem (640px) */
+@media (width >= 40rem) {
+  #debug-css::after {
+    content: 'SM';
+  }
+}
+
+/* 48rem (768px) */
+@media (width >= 48rem) {
+  #debug-css::after {
+    content: 'MD';
+  }
+
+  body {
+    padding: 0 4rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header nav a {
+    margin-left: 2rem;
+  }
+
+  /* =================================== index.html ===================================*/
+
+  main {
+    margin-top: 4rem;
+  }
+
+  .info-intro {
+    line-height: 1;
+    text-align: start;
+  }
+  .info-intro h2 {
+    font-size: 6em;
+  }
+  .info-intro h3 {
+    font-size: 4em;
+  }
+  .info-intro h4 {
+    font-size: 2.2em;
+    line-height: 2;
+  }
+
+  .info-intro .github {
+    font-size: 0.4em;
+  }
+
+  .info-link nav {
+    display: flex;
+    justify-content: start;
+    line-height: 2;
+  }
+
+  .info-about {
+    margin: 1rem 0;
+    font-size: 1.4em;
+    font-display: swap;
+  }
+
+  .info-about article p {
+    margin-bottom: 24px;
+  }
+
+  /* =================================== index.html ===================================*/
+
+  .footer-content-1 {
+    padding: 0 0;
+  }
+}
+
+/* 64rem (1024px) */
+@media (width >= 64rem) {
+  #debug-css::after {
+    content: 'LG';
+  }
+}
+
+/* 80rem (1280px) */
+@media (width >= 80rem) {
+  #debug-css::after {
+    content: 'XL';
+  }
+}
+
+/* 96rem (1536px) */
+@media (width >= 96rem) {
+  #debug-css::after {
+    content: '2XL';
+  }
+}

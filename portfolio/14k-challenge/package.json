@@ -7,9 +7,13 @@
   "scripts": {
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"pages/*.{js,ts,css,html,scss,sass}\" \"*.{js,ts,css,html,scss,sass}\"",
+    "format:watch": "onchange \"pages/*.{js,ts,css,html,scss,sass}\" \"*.{js,ts,css,html,scss,sass}\" -- prettier --write --ignore-unknown {{changed}}"
   },
   "devDependencies": {
+    "onchange": "^7.1.0",
+    "prettier": "^3.6.2",
     "vite": "^7.0.6",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-simple-html": "^1.0.1",

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Example: block specific folders
+Disallow: /pages/
